@@ -1,0 +1,22 @@
+{
+  "name": "desafio1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js", 
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Erick Adrian Trejo Mora",
+  "license": "ISC",
+  "description": "Curso de Automatización",
+  "dependencies": {
+    "chai": "^5.1.2",
+    "desafio1": "file:",
+    "mocha": "^10.8.2",
+    "puppeteer": "^23.7.1"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  }
+}
