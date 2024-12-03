@@ -1,22 +1,22 @@
 {
-  "name": "desafio1",
+  "name": "desafio2-3",
   "version": "1.0.0",
+  "description": "Desafio 2-3",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js", 
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "node node_modules/mocha/bin/mocha --timeout=60000 ./tests",
+    "desafio-2": "node node_modules/mocha/bin/mocha --timeout=60000 ./tests/desafio2.test.js",
+    "desafio-3": "node node_modules/mocha/bin/mocha --timeout=60000 ./tests/desafio3.test.js"
   },
-  "keywords": [],
   "author": "Erick Adrian Trejo Mora",
   "license": "ISC",
-  "description": "Curso de Automatización",
   "dependencies": {
-    "chai": "^5.1.2",
-    "desafio1": "file:",
+    "chai": "^4.4.1",
+    "cursos-puppeteer": "file:",
+    "desafio2-3": "file:",
     "mocha": "^10.8.2",
-    "puppeteer": "^23.7.1"
-  },
-  "devDependencies": {
-    "prettier": "^3.3.3"
+    "puppeteer": "^23.7.1",
+    "puppeteer-core": "^23.7.1"
   }
 }

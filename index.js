@@ -1,18 +1,12 @@
-// Importamos Puppeteer
 const puppeteer = require('puppeteer');
 
-(async () => {
-  // Abrimos el navegador
-  const browser = await puppeteer.launch({ headless: false }); // headless: false abre el navegador en modo visible
-  const page = await browser.newPage();
+async function pruebaNavegador(){
+    const browser = await puppeteer.launch({headless: false, slowMo: 500});
+    const page = await browser.newPage();
+    await page.goto('http://example.com');
+    await page.waitForSelector('h1');
+    await browser.close();
+}
 
-  // Abrimos la página de Google
-  await page.goto('https://www.google.com');
-
-  // Mantén el navegador abierto unos segundos antes de cerrar
-  await page.waitForTimeout(5000);
-
-  // Cerramos el navegador
-  await browser.close();
-})();
+pruebaNavegador();
 
